@@ -28,12 +28,19 @@
 		#banner .btn .b_ul li{list-style: none;float: left;background: url(images/1.png) no-repeat;width: 16px;height: 16px;}
 		#banner .btn .b_ul .b_no{background: url(images/2.png) no-repeat;cursor: pointer;}
 		
-		#course{width: 1000px;height: 210px;background: #000;margin: 0 auto;}
-		
+		#course{width: 1000px;height: 219px;margin: 0 auto;}
+		#course .c_up{width: 1000px;height: 219px;margin: 0 auto;background: url(images/course-index.png) no-repeat center;padding: 50px 0px 60px 0px;}
+		#course .c_up .c_ul{padding-top: 55px; padding-left: 65px;}
+		#course .c_up .c_ul li{width: 290px;height: 94px;list-style: none;float: left;}
+		#course .c_up .c_ul li .c_icon_1{width: 94px;height: 94px;display:block;background: url(images/index_classet_btn.png) no-repeat;background-position: -17px -10px;line-height: 96px;font-size: 26px;font-weight: bold;color: #fff;float: left;text-align: center;}
+		#course .c_up .c_ul li .c_icon_2{width: 94px;height: 94px;display:block;background: url(images/index_classet_btn.png) no-repeat;background-position: -17px -105px;line-height: 96px;font-size: 26px;font-weight: bold;color: #fff;float: left;text-align: center;}
+		#course .c_up .c_ul li .c_icon_3{width: 94px;height: 94px;display:block;background: url(images/index_classet_btn.png) no-repeat;background-position: -17px -202px;line-height: 96px;font-size: 26px;font-weight: bold;color: #fff;float: left;text-align: center;}
+		#course .c_up .c_ul li strong{font-size: 16px;line-height: 35px;padding-left: 3px;}
+		#course .c_up .c_ul li .c_title{padding-top: 10px;}
+		#course .c_up .c_ul li p{padding-left: 100px;}
 		#course_box{width: 1000px;height: 210px;background: #6cf;margin: 0 auto;}
-		#course_box .c_b_left{}
+		
 	</style>
-<body>
 	<!--top  start-->
 	<div id="top">
 		<div class="t_header">
@@ -72,11 +79,33 @@
 	
 	<!--course  start-->
 	<div id="course">
-		
+		<div class="c_up">
+			<ul class="c_ul">
+				<li>
+					<span class="c_icon_1">20:00</span>
+					<p class="c_title">开设课程：</p>
+					<strong>VIP零基础到项目实战</strong>
+					<p>技术总监：蓝桥老师</p>
+				</li>
+				<li>
+					<span class="c_icon_2">20:30</span>
+					<p class="c_title">开设课程：</p>
+					<strong>腾讯内部核心技术班</strong>
+					<p>学院创始人：arry老师</p>
+				</li>
+				<li>
+					<span class="c_icon_3">21:00</span>
+					<p class="c_title">开设课程：</p>
+					<strong>特训班（动态开发）</strong>
+					<p>项目经理：Bill老师</p>
+				</li>
+			</ul>
+		</div>
+		<div class="c_down"></div>
 	</div>
 	<!--end course-->
 	
-	
+	<!--course_box  start-->
 	<div id="course_box">
 		<div class="c_b_left">
 			
@@ -87,7 +116,8 @@
 		<div class="c_b_right">
 			
 		</div>
-		
+	
 	</div>
+	<!--end course_box-->
 </body>
 </html>
