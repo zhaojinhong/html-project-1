@@ -9,8 +9,8 @@
 	<style type="text/css">
 		*{margin: 0;padding: 0;}
 		body{font-size: 12px;font-family: "微软雅黑";color: #666;}
-		#top{width: 100%;height: 80px;border: 1px red solid;}
-		#top .t_header{width: 1000px;height:80px;margin: 0 auto;border: 1px red solid;}
+		#top{width: 100%;height: 80px;}
+		#top .t_header{width: 1000px;height:80px;margin: 0 auto;}
 		#top .t_header .t_logo{float: left;margin-top: 5px;}
 		#top .t_header .t_nav{float: left;margin-left: 60px;}
 		#top .t_header .t_nav ul li{float: left;list-style: none;line-height: 80px;margin-left: 20px;}
@@ -22,8 +22,16 @@
 		#top .t_header .t_share .wx{background-position: -38px 8px;}
 		#top .t_header .t_share .qq{background-position: -80px 7px;}
 		
-		#banner{width:100% ;height: 24px;background: url(images/1.jpg) no-repeat top center;padding-top: 216px;border: 1px red solid;}
-		#banner .btn{width: 87px;height: 22px;background: url(images/2.png) no-repeat;margin:0 auto ;border: 1px solid red;}
+		#banner{width:100% ;height: 24px;background: url(images/1.jpg) no-repeat top center;padding-top: 216px;}
+		#banner .btn{width: 87px;height: 22px;margin:0 auto ;}
+		#banner .btn .b_ul{background: rgba(0,0,0,0.5);display: inline-block;padding: 3px 27px;border-radius: 11px;}
+		#banner .btn .b_ul li{list-style: none;float: left;background: url(images/1.png) no-repeat;width: 16px;height: 16px;}
+		#banner .btn .b_ul .b_no{background: url(images/2.png) no-repeat;cursor: pointer;}
+		
+		#course{width: 1000px;height: 210px;background: #000;margin: 0 auto;}
+		
+		#course_box{width: 1000px;height: 210px;background: #6cf;margin: 0 auto;}
+		#course_box .c_b_left{}
 	</style>
 <body>
 	<!--top  start-->
@@ -54,10 +62,32 @@
 	<!--banner  start-->
 	<div id="banner">
 		<div class="btn">
-
+			<ul class="b_ul">
+				<li class="b_no"></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<!--end banner-->
+	
+	<!--course  start-->
+	<div id="course">
+		
+	</div>
+	<!--end course-->
+	
+	
+	<div id="course_box">
+		<div class="c_b_left">
+			
+		</div>
+		<div class="f_b_center">
+			
+		</div>
+		<div class="c_b_right">
+			
 		</div>
 		
 	</div>
-	<!--end banner-->
 </body>
 </html>
