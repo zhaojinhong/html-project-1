@@ -8,13 +8,13 @@
 	</head>
 	<style type="text/css">
 		*{margin: 0;padding: 0;}
-		body{font-size: 12px;font-family: "微软雅黑";color: #666;}
-		#top{width: 100%;height: 80px;}
+		body{font-size: 12px;font-family: "微软雅黑";color: #666;background: url(images/bg.png);}
+		#top{width: 100%;height: 80px;background: #FFFFFF;}
 		#top .t_header{width: 1000px;height:80px;margin: 0 auto;}
 		#top .t_header .t_logo{float: left;margin-top: 5px;}
 		#top .t_header .t_nav{float: left;margin-left: 60px;}
 		#top .t_header .t_nav ul li{float: left;list-style: none;line-height: 80px;margin-left: 20px;}
-		#top .t_header .t_nav ul li a{font-size: 16px;text-decoration: none;}
+		#top .t_header .t_nav ul li a{font-size: 16px;text-decoration: none;color: #666;}
 		#top .t_header .t_nav .t_sel{border-bottom: 3px solid #D03D43;padding-bottom: 3px;}
 		#top .t_header .t_nav ul li a:hover{border-bottom: 3px solid #D03D43;padding-bottom: 3px;}
 		#top .t_header .t_share{float: right;}
@@ -38,8 +38,44 @@
 		#course .c_up .c_ul li strong{font-size: 16px;line-height: 35px;padding-left: 3px;}
 		#course .c_up .c_ul li .c_title{padding-top: 10px;}
 		#course .c_up .c_ul li p{padding-left: 100px;}
-		#course_box{width: 1000px;height: 210px;background: #6cf;margin: 0 auto;}
 		
+		#course_box{width: 1000px;height: 210px;margin: 80px auto;}
+		#course_box .c_b_left{width: 42px;height: 210px;float: left;}
+		#course_box .c_b_left .c_pre{width: 42px;height: 58px;background: url(images/pae.png) no-repeat center;display: block;margin-top:70px ;background-position: 4px 0px;}
+		#course_box .c_b_left .c_pre:hover{background-position: 4px -107px;}
+		
+		#course_box .c_b_center{width: 916px;height: 210px;float: left;}
+		#course_box .c_b_center .c_list{width: 304px;height: 200px;background: url(images/bagj_03.png) no-repeat center;background-position: 7px 150px;float: left;}
+		#course_box .c_b_center .c_list .c_book{padding-top: 32px;width: 112px;height: 144px;float: left;}
+		#course_box .c_b_center .c_list .c_info{width: 190px;height: 180px;float: left;padding-top: 50px;}
+		#course_box .c_b_center .c_list .c_info strong{font-size: 14px;font-weight: bold;}
+		#course_box .c_b_center .c_list .c_info p{height:34px;-webkit-line-clamp: 2;overflow: hidden;margin: 10px 0;}
+		#course_box .c_b_center .c_list .c_info a{background: #f60;text-decoration: none;border-radius: 11px;padding: 3px 20px;color: #FFF;}
+		#course_box .c_b_right{width: 42px;height: 210px;float: right;}
+		#course_box .c_b_right .c_next{width: 42px;height: 58px;background: url(images/pae.png) no-repeat center;display: block;margin-top:70px ;background-position: 4px -213px;}
+		#course_box .c_b_right .c_next:hover{background-position: 4px -323px;}
+		#vip{width: 422px;height: 41px;margin: 80px auto;}
+		#vip a{text-decoration: none;line-height: 41px;font-size:16px;background: #dd4250;display: block;text-align: center;border-radius: 20px;color: #fff;font-weight: bold;}
+		
+		#pic{width: 1000px;height: 440px;margin: 0 auto;background: #fff;border-radius: 5px;}
+		#pic h3{font-size: 18px;text-align: center;display: block;font-weight: bold;padding-top: 10px;}
+		#pic .p_img ul li{list-style: none;float: left;padding: 24px 0px 0px 24px;}
+		
+		#lesson{width: 1000px;height: 320px;margin: 80px auto;background: #fff;border-radius: 5px;}
+		#lesson .l_left{width: 450px;height: 260px;float: left;margin-top: 30px;margin-left: 15px;}
+		#lesson .l_left h3{background: url(images/course_present.png) no-repeat;font-size: 20px;padding-left: 35px;font-weight: bold;}
+		#lesson .l_left p{font-size: 14px;line-height: 0px;margin-top: 30px;padding-left: 35px;}
+		#lesson .l_left h4{background: url(images/fee_icon.png) no-repeat;font-size: 20px;padding-left: 35px;font-weight: bold;margin-top: 30px;}
+		#lesson .l_left .l_price{font-size: 40px;color: #f60;font-weight: bold;}
+		#lesson .l_left .l_one{font: 14px;border-left: 1px solid #D2D2D2;margin-left: 10px;padding-left: 10px;}
+		#lesson .l_right{width: 420px;height: 260px;float: left;margin-top: 30px;margin-left: 70px;padding-left: 30px;}
+		#lesson .l_right strong{font-size: 20px;}
+		#lesson .l_right .l_date{font-size: 14px;line-height: 40px;margin-top: 10px;font-weight: bold;color:#000; }
+		#lesson .l_right .l_phone{font-size: 18px;margin-top: 30px;font-weight: bold;}
+		#lesson .l_right .l_phone span{font-size: 40px;color: #f60;font-weight: bold;}
+		
+		#footer{width: 100%;height: 50px;text-align: center;line-height: 50px;font-size: 14px;background: #FFFFFF;}
+		#footer p a{text-decoration: none;}
 	</style>
 	<!--top  start-->
 	<div id="top">
@@ -108,16 +144,99 @@
 	<!--course_box  start-->
 	<div id="course_box">
 		<div class="c_b_left">
-			
+			<a href="#" class="c_pre"></a>
 		</div>
-		<div class="f_b_center">
-			
+		
+		<div class="c_b_center">
+			<div class="c_list">
+				<div class="c_book">
+					<img src="images/txb.png" align="网页制作" width="112px" height="144px" />
+				</div>
+				<div class="c_info">
+					<strong>特训班（独立动态网站开发）</strong>
+					<p>HTML零基础到高级课程实战（全程20节课），独立设计编写模板，开发完整具有前后台的动态网站，存实战训练。</p>
+					<a href="#" class="c_btn">马上报名</a>
+				</div>
+			</div>
+			<div class="c_list">
+				<div class="c_book">
+					<img src="images/sj.png" align="网页制作" width="112px" height="144px" />
+				</div>
+				<div class="c_info">
+					<strong>HTML5+css3手机网页制作</strong>
+					<p>HTML零基础到高级课程实战（全程20节课），独立设计编写模板，开发完整具有前后台的动态网站，存实战训练。</p>
+					<a href="#" class="c_btn">马上报名</a>
+				</div>
+			</div>
+			<div class="c_list">
+				<div class="c_book">
+					<img src="images/web.png" align="网页制作" width="112px" height="144px" />
+				</div>
+				<div class="c_info">
+					<strong>SEO代码优化课程</strong>
+					<p>HTML零基础到高级课程实战（全程20节课），独立设计编写模板，开发完整具有前后台的动态网站，存实战训练。</p>
+					<a href="#" class="c_btn">马上报名</a>
+				</div>
+			</div>
 		</div>
+		
 		<div class="c_b_right">
-			
+			<a href="#" class="c_next"></a>
 		</div>
 	
 	</div>
 	<!--end course_box-->
+	
+	<!--vip start-->
+	<div id="vip">
+		<a href="#">马上咨询报名网页制作VIP&gt;&gt;</a>
+	</div>
+	<!--stop sop-->
+	
+	<!--pic start-->
+	<div id="pic">
+		<h3>潭州教育办公环境</h3>
+		<div class="p_img">
+			<ul>
+				<li><a href="#"><img src="images/img/s_8.jpg" alt="web" width="220" height="165"/></a></li>
+				<li><a href="#"><img src="images/img/s_8.jpg" alt="web" width="220" height="165"/></a></li>
+				<li><a href="#"><img src="images/img/s_8.jpg" alt="web" width="220" height="165"/></a></li>
+				<li><a href="#"><img src="images/img/s_8.jpg" alt="web" width="220" height="165"/></a></li>
+				<li><a href="#"><img src="images/img/s_8.jpg" alt="web" width="220" height="165"/></a></li>
+				<li><a href="#"><img src="images/img/s_8.jpg" alt="web" width="220" height="165"/></a></li>
+				<li><a href="#"><img src="images/img/s_8.jpg" alt="web" width="220" height="165"/></a></li>
+				<li><a href="#"><img src="images/img/s_8.jpg" alt="web" width="220" height="165"/></a></li>
+			</ul>
+		</div>
+	</div>
+	<!--pic stop-->
+	
+	<!--lesson start-->
+	<div id="lesson">
+		<div class="l_left">
+			<h3>仅本期报名学员可免费参加以下付费学习班：</h3>
+			<p>1. 特训班 (织梦DeDe独立开发动态网站20节课) 课表下载地址</p>
+			<p>2. SEO 代码优化课程</p>
+			<p>3. HTML5 + css3班 ，手机版网页制作</p>
+			<h4>VIP课程学费</h4>
+			<p>
+				<span class="l_price">7780￥</span>
+				<span class="l_one">含一对一指导，解答</span>
+			</p>
+			<p>（名额有限，先到先得！）</p>
+		</div>
+		<div class="l_right">
+			<strong>报名QQ：635800005</strong>
+			<p class="l_date">报名截止日期:<br />2016年7月31日</p>
+			<p class="l_phone">咨询电话：<br /><span>400-009-6359</span></p>
+		</div>
+	</div>
+	<!--lesson stop-->
+	
+	<!--footer start-->
+	<div id="footer">
+		<p>Copyright © 2013-2014 <a href="#">WWW.TANZHOUEDU.COM All</a> Rights Reserved 版权所有：湖南潭州教育网络科技有限公司 备案号：备15014315号</p>
+	</div>
+	<!--footer stop-->
 </body>
 </html>
